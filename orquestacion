@@ -1,0 +1,13 @@
+name: Orquestación QA
+
+on:
+  push:
+    branches:
+      - qa_split
+
+jobs:
+  orquestacion:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Orquestando...
+        run: echo "✅ Orquestando release previo a producción"
